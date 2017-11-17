@@ -1,6 +1,6 @@
 set SERVICE_NAME=ScoreMarkerService
 
-set APP_HOME=D:\service
+set APP_HOME=E:\WorkSpace\IQCloud\Source\ExamStack\scoreMarker
 set PR_INSTALL=%APP_HOME%\prunsrv.exe
  
 REM Service log configuration
@@ -11,7 +11,7 @@ set PR_STDERROR=d:\logs\stderr.txt
 set PR_LOGLEVEL=Error
 
 REM Path to java installation
-set PR_JVM=%JAVA_HOME%\jre\bin\server\jvm.dll
+set PR_JVM=E:\zlsu\App\jdk8\jre\bin\server\jvm.dll
 set PR_CLASSPATH=%APP_HOME%\ScoreMarker-2.0.0.jar
  
 REM Startup configuration
@@ -30,6 +30,7 @@ set PR_JVMMS=256
 set PR_JVMMX=1024
 set PR_JVMSS=4000
 set PR_JVMOPTIONS=-Duser.language=DE;-Duser.region=de
+
  
 REM Install service
 prunsrv.exe //IS//%SERVICE_NAME%
